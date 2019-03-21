@@ -130,10 +130,41 @@ li {
 
     p {
         text-align: center;
-        color: whitesmoke;
+        /* color: whitesmoke; */
         font-size: "American Typewriter";
     }
     
+       /* Contact page */
+.customers {
+    font-family: sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  .customers td, #customers th {
+    border: 4px solid #ddd;
+    padding: 4px;
+    border-left: 2px;
+    border-right: 2px;
+  }
+  
+  .customers tr:nth-child(even){background-color: #f2f2f2;}
+  
+  .customers tr:hover {background-color: #ddd;}
+  
+  .customers th {
+    padding-top: 6px;
+    padding-bottom: 6px;
+    text-align: center;
+    background-color: #4CAF50;
+    color: white;
+    font-family: sans-serif;
+  }
+
+  .LI-profile-badge {
+      width: 100%;
+      text-align: center;
+  }
 }
 
     /* For mobile, what we inline is the content of both the topline and the bottomline so that they appear */
@@ -260,7 +291,8 @@ li {
         font-family: sans-serif;
     }
 
-}
+
+
 
 /* Desktop */
 @media screen and (min-width: 400px) {
@@ -379,11 +411,37 @@ li {
         /* text-align: center; */
     }
 
-/* Contact page */
-
-
-
 }
+
+/* Contact page */
+.customers {
+    font-family: sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  .customers td, #customers th {
+    border: 10px solid #ddd;
+    padding: 8px;
+  }
+  
+  .customers tr:nth-child(even){background-color: #f2f2f2;}
+  
+  .customers tr:hover {background-color: #ddd;}
+  
+  .customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+    font-family: "American Typewriter", serif;
+  }
+
+  .LI-profile-badge {
+      width: 100%;
+      text-align: center;
+  }
 
 /* Art page */
 
@@ -393,3 +451,7 @@ li {
     width: 100%;
     text-align:center;
 }
+
+
+
+ 

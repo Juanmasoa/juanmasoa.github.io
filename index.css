@@ -1,0 +1,139 @@
+/* Mobile first, so I have to stablish the mobile conditions */
+
+h1 {
+    font-family: "American Typewriter", serif;
+    text-align: center;
+}
+
+p {
+    font-family: sans-serif;
+}
+
+.intro {
+    text-align: center;
+    padding: 30px 10px;
+    background-color: whitesmoke;
+}
+
+h1 {
+    font-family: "American Typewriter", serif;
+}
+
+h2 {
+    font-family: "American Typewriter", serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    background-color: rgb(72, 72, 214);
+}
+/* I need a space between the headline and the buttons to display an animation of a man pushing a rock as a signal of effort */
+
+/* Mobile */
+
+@media screen and (max-width: 400px) {
+
+    a {
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+    }
+    .main {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        background-color: rgb(0, 0, 0);
+    }
+
+
+    .juanma {
+        /* background-image: url(images/juanma.jpg); */
+        background-color: whitesmoke;
+        background-size: cover;
+        justify-content: center;
+        align-self: flex-start;
+        width: 100%;
+        padding: 20px 5px 5px 5px;
+        margin-bottom: 20px;
+        display: flex;
+    }
+
+        .topcircle {
+            background-color: rgb(127, 255, 212);
+            background: url("images/juanma2.jpg");
+            background-size: cover;
+            justify-content: center;
+            align-self: flex-start;
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+        }
+
+    .past {
+        /* background: url(images/juanma.jpg) no-repeat fixed; */
+        background-color: whitesmoke;
+        align-self: center;
+        width: 50%;
+        display:flex;
+        justify-content: center;
+    }
+
+        .leftcircle {
+            /* align-self: center; */
+            background: url("images/juanma.jpg");
+            background-size: cover;
+            background-color: brown;
+            width: 70px;
+            height: 70px; 
+            border-radius: 50%;
+
+        }
+
+    .art {
+        /* background: url(images/poetry.jpg) no-repeat fixed; */
+        background-color: whitesmoke;
+        align-self: center;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+    }
+
+        .rightcircle {
+            background: url("images/poetry.jpg");
+            background-color: blueviolet;
+            background-size: cover;
+            width: 70px;
+            height: 70px; 
+            border-radius: 50%;
+        }
+
+    .contact {
+        /* background: url(images/juanma2.jpg) no-repeat fixed; */
+        background-color: whitesmoke;
+        justify-content: center;
+        align-self: flex-end;
+        width: 100%;
+        padding: 5px 5px 30px 5px;
+        margin-top: 20px;
+        display: flex;
+    }
+
+        .bottomcircle {
+            background-color: rgba(28, 75, 145, 0.564);
+            width: 70px;
+            height: 70px; 
+            border-radius: 50%;
+        }
+
+    p {
+        text-align: center;
+        /* color: whitesmoke; */
+        font-size: "American Typewriter";
+    }
+    
