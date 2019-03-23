@@ -32,7 +32,7 @@ li {
 
 /* Mobile */
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 502px) {
 
 /* For mobile, what we inline is the content of both the topline and the bottomline so that they appear */
     
@@ -56,7 +56,7 @@ li {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-bottom: 400px;
+        margin-bottom: 40px;
     }
 
     .topline {
@@ -125,13 +125,13 @@ li {
     }
     
     /* Change color of dropdown links on hover */
-    /* .dropdown-content a:hover {background-color: #ddd;} */
+    .dropdown-content a:hover {background-color: #ddd;}
     
     /* Show the dropdown menu on hover */
     .dropdown:hover .dropdown-content {display: block;}
     
     /* Change the background color of the dropdown button when the dropdown content is shown */
-    /* .dropdown:hover .dropbtn {background-color: rgb(0, 0, 0); color: rgb(255, 255, 255);} */
+    .dropdown:active .dropbtn {background-color: rgb(0, 0, 0); color: rgb(255, 255, 255);}
 
 
 /* Now we align the each concrete position with its correspondent picture */
@@ -183,12 +183,43 @@ li {
         height: 20px;
      }
      
+     .second_half_screen {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+        .back_to_home {
+            justify-content: center;
+            align-self: center;
+            width: 100%;
+            padding: 15px; 
+            display: flex;
+        }
+            .house {
+                background-color: rgb(127, 255, 212);
+                background: url("images/home.png") no-repeat;
+                background-size: 100px;
+                justify-content: center;
+                align-self: flex-end;
+                width: 100px;
+                height: 70px;
+            }
+    
+            .house p {
+                text-align: center;
+            }
+            .house a {
+                text-decoration: none;
+                font-family: "American Typewriter", serif;
+                color: rgb(255, 255, 255);
+            }
+    
 }
 
 
 
 /* Desktop */
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 502px) {
 
 /* Animated html image moving from left to right */
 
@@ -327,16 +358,7 @@ li {
     height: 20px;
  }
  
-
-}
-
-
-body {
-    background-color: whitesmoke;
-}
-
-
-.second_half_screen {
+ .second_half_screen {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -366,3 +388,13 @@ body {
             font-family: "American Typewriter", serif;
             color: rgb(255, 255, 255);
         }
+
+
+}
+
+
+body {
+    background-color: whitesmoke;
+}
+
+
