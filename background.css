@@ -1,0 +1,368 @@
+
+/* Mobile first, so I have to stablish the mobile conditions */
+h1 {
+    font-family: "American Typewriter", serif;
+    text-align: center;
+}
+
+p {
+    font-family: sans-serif;
+}
+
+.intro {
+    text-align: center;
+    padding: 30px 10px;
+    background-color: whitesmoke;
+}
+
+h2 {
+    font-family: "American Typewriter", serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+
+/* I need a space between the headline and the buttons to display an animation of a man pushing a rock as a signal of effort */
+
+/* Mobile */
+
+@media screen and (max-width: 400px) {
+
+/* For mobile, what we inline is the content of both the topline and the bottomline so that they appear */
+    
+    .animation {
+        width: 100%;
+    }
+
+    .animation img {
+        height: 70px;
+        width: 70px;
+        position: relative;
+        animation: snowball 3s forwards infinite;
+    }
+
+    @keyframes snowball {
+        from  { left:00px; top:0px; }
+        to { left: 80%; top:0px; }
+    }
+    
+    .background {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 400px;
+    }
+
+    .topline {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bottomline {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+/* For both lines not to be so close, we add margins */
+
+    .topline {
+        margin-bottom: 40px;
+    }
+
+    .bottomline {
+        margin-top: 40px;
+    }
+
+    .background {
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+/* Dropdown Button */
+    .dropbtn {
+        margin-left: 20px;
+        margin-right: 20px;
+        background-color: rgba(126, 168, 171, 0.893)
+    }
+
+        .dropbtn li {
+            list-style: none;
+        }
+
+    
+    /* The container <div> - needed to position the dropdown content */
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+    
+    /* Dropdown Content (Hidden by Default) */
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+    
+    /* Links inside the dropdown */
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+    
+    /* Change color of dropdown links on hover */
+    /* .dropdown-content a:hover {background-color: #ddd;} */
+    
+    /* Show the dropdown menu on hover */
+    .dropdown:hover .dropdown-content {display: block;}
+    
+    /* Change the background color of the dropdown button when the dropdown content is shown */
+    /* .dropdown:hover .dropbtn {background-color: rgb(0, 0, 0); color: rgb(255, 255, 255);} */
+
+
+/* Now we align the each concrete position with its correspondent picture */
+
+    .content {
+        display: flex;
+        justify-content: flex-start;
+        text-align: flex-start;
+    }
+
+    .content img {
+        width: 20px;
+        height: 20px;
+        margin: 10px;
+    }
+    
+    .content li {
+        font-size: 20px;
+        font-family: sans-serif;
+        list-style: circle; 
+    }
+
+    .footer {
+        position: fixed;
+        margin-top: 100px;
+        left: 0;
+        bottom: 0;
+        font-size: 10px;
+        margin: 5px;
+        margin-bottom: 1px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        
+    }    
+    
+    .contact_footer {
+        align-self: flex-end;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+     }
+    
+     .contact_footer img {
+    
+        width: 20px;
+        height: 20px;
+     }
+     
+}
+
+
+
+/* Desktop */
+@media screen and (min-width: 400px) {
+
+/* Animated html image moving from left to right */
+
+    .animation {
+        width: 100%;
+    }
+
+    .animation img {
+        height: 90px;
+        width: 90px;
+        position: relative;
+        animation: snowball 40s forwards infinite;
+    }
+    
+    @keyframes snowball {
+        from  { left:-100px; top:0px; }
+        to { left: 100%; top:0px; }
+    }
+
+/*  Core part of the page. Main navbar which elements are different types of experience. 
+    In each of these, there is a dropdown when hover showing concrete positions within each type of experience.
+    Eg: The internship at a law-firm is part of the Professional background.     */
+
+/*  First, we align the elements for them to appear in the center of the page */
+    .background {
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+/* We call both of the divs which are part of the nav bar. We made them be inline, so the appear at the same line for desktop. */
+    .topline {
+        display: inline-block;
+    }
+
+    .bottomline {
+        display: inline-block;
+    }
+  
+/* Dropdown Button */
+    .dropbtn {
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 20px;
+        background-color: rgba(126, 168, 171, 0.893);
+    }
+
+        .dropbtn li {
+            list-style: none;
+        }
+
+    
+    /* The container <div> - needed to position the dropdown content */
+    .dropdown {
+        display: inline-block;
+    }
+    
+    /* Dropdown Content (Hidden by Default) */
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        right: 100px;
+        left: 100px;
+    }
+    
+    /* Links inside the dropdown */
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+    
+    /* Change color of dropdown links on hover */
+    .dropdown-content a:hover {background-color: #ddd;}
+    
+    /* Show the dropdown menu on hover */
+    .dropdown:hover .dropdown-content {display: block;}
+    
+    /* Change the background color of the dropdown button when the dropdown content is shown */
+    .dropdown:hover .dropbtn {background-color: rgb(0, 0, 0); color: rgb(255, 255, 255);}
+
+
+/* Now we align the each concrete position with its correspondent picture */
+
+    .content {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .content img {
+        align-self: center;
+        width: 20px;
+        height: 20px;
+        margin: 10px;
+        right: 0;
+    }
+    
+    .content li {
+        font-size: 20px;
+        font-family: sans-serif;
+        margin: 30px;
+        /* text-align: center; */
+    }
+
+  .footer {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    font-size: 10px;
+    padding-right: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}    
+
+.contact_footer {
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+ }
+
+ .contact_footer img {
+
+    width: 20px;
+    height: 20px;
+ }
+ 
+
+}
+
+
+body {
+    background-color: whitesmoke;
+}
+
+
+.second_half_screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    .back_to_home {
+        justify-content: center;
+        align-self: center;
+        width: 100%;
+        padding: 150px; 
+        display: flex;
+    }
+        .house {
+            background-color: rgb(127, 255, 212);
+            background: url("images/home.png") no-repeat;
+            background-size: 100px;
+            justify-content: center;
+            align-self: flex-end;
+            width: 100px;
+            height: 70px;
+        }
+
+        .house p {
+            text-align: center;
+        }
+        .house a {
+            text-decoration: none;
+            font-family: "American Typewriter", serif;
+            color: rgb(255, 255, 255);
+        }

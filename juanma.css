@@ -1,0 +1,180 @@
+
+h1 {
+    font-family: "American Typewriter", serif;
+    text-align: center;
+}
+
+p {
+    font-family: sans-serif;
+}
+
+body {
+    background-color: rgb(244, 244, 244);
+    margin: 40px;
+    text-indent: 10px;
+    text-align: justify;
+}
+
+
+h2 {
+    font-family: "American Typewriter", serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+/* Graduation picture on the left; text on the right */
+
+@media screen and (min-width: 750px) {
+    .history {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: nowrap;
+        
+    }
+
+    .beginning_image {
+        right: 0;
+        left: 300px;
+        margin-right: 40px;
+    }
+
+        .beginning_image img {
+            width: 90%   
+        }
+    .beginning_text {
+        width: 100%;
+    }
+        .beginning_text p {
+            width: 100%;
+            font-size: auto;
+        }
+
+    .self_development {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-wrap: wrap;
+     }
+     .medium_text {
+         width: 100%; 
+     }
+
+     .medium_image img {
+        text-align: center; 
+        width: 500px;
+     }
+    }
+
+@media screen and (max-width: 750px) {
+    .history {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    
+    .beginning_image {
+        text-align: center;
+    }
+
+        .beginning_image img {
+            text-align: center;
+            size: auto;
+            width: 120px;
+        }
+    .beginning_text {
+        width: 100%;
+    }
+        .beginning_text p {
+            width: 100%;
+            font-size: auto;
+            margin: 20px;
+        }
+
+        .self_development {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-wrap: wrap;
+         }
+         .medium_text {
+             width: 100%;
+         }
+    
+         .medium_image {
+             text-align: center;
+         }
+         .medium_image img {
+            text-align: center;
+            size: auto;
+            width: 220px; 
+         }
+
+    .footer {
+            font-size: 10px;
+            margin: 5px;
+        }
+    
+}
+
+/* Footer */
+.footer {
+    font-size: 10px;
+    margin: 5px;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}    
+
+.contact_footer {
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+ }
+
+ .contact_footer img {
+    width: 20px;
+    height: 20px;
+ }
+
+ .second_half_screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    .back_to_home {
+        justify-content: center;
+        align-self: center;
+        width: 100%;
+        padding: 150px; 
+        display: flex;
+    }
+        .house {
+            background-color: rgb(127, 255, 212);
+            background: url("images/home.png") no-repeat;
+            background-size: 100px;
+            justify-content: center;
+            align-self: flex-end;
+            width: 100px;
+            height: 70px;
+        }
+
+        .house p {
+            text-align: center;
+        }
+        .house a {
+            text-decoration: none;
+            font-family: "American Typewriter", serif;
+            color: rgb(255, 255, 255);
+        }
