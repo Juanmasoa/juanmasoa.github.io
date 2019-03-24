@@ -1,0 +1,238 @@
+h1 {
+    font-family: "American Typewriter", serif;
+    text-align: center;
+}
+
+p {
+    font-family: sans-serif;
+}
+
+
+h1 {
+    font-family: "American Typewriter", serif;
+}
+
+h2 {
+    font-family: "American Typewriter", serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    background-color: rgb(244, 244, 244);
+    margin: 40px;
+    text-indent: 10px;
+}
+
+
+.footer {
+    margin-top: 100px;
+    bottom: 0%;
+    font-size: 10px;
+    margin: 5px;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}    
+
+.contact_footer {
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+ }
+
+ .contact_footer img {
+
+    width: 20px;
+    height: 20px;
+ }
+     /* Contact page */
+      @media screen and (max-width: 400px) {
+        h2 {
+            width: 100%;
+        }
+
+   
+    .table {
+        font-family: sans-serif;
+        border-collapse: collapse;
+        font-size: auto;
+        width: 100%;
+      }
+      
+      .table td, #table th {
+        border: 4px solid #ddd;
+        padding: 4px;
+        border-left: 2px;
+        border-right: 2px;
+      }
+      
+      .table tr:nth-child(even){background-color: #f2f2f2;}
+      
+      .table tr:hover {background-color: #ddd;}
+      
+      .table th {
+        padding-top: 6px;
+        padding-bottom: 6px;
+        text-align: center;
+        background-color: rgb(17, 17, 16);
+        color: white;
+        font-family: sans-serif;
+      }
+    
+      .LI-profile-badge {
+          width: 100%;
+          text-align: right;
+      }
+
+      .github {
+        width: 100px;
+        text-align: center;
+      }
+
+      .footer {
+        font-size: 10px;
+        margin: 5px;
+        }
+
+    }
+
+    @media screen and (min-width: 400px) {
+        .reference {
+            margin-top: 200px;
+        } 
+        .table {
+        font-family: sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+      
+      .table td, #table th {
+        border: 4px solid #ddd;
+        padding: 4px;
+        border-left: 2px;
+        border-right: 2px;
+      }
+      
+      .table tr:nth-child(even){background-color: #f2f2f2;}
+      
+      .table tr:hover {background-color: #ddd;}
+      
+      .table th {
+        padding-top: 6px;
+        padding-bottom: 6px;
+        text-align: center;
+        background-color: rgb(17, 17, 16);
+        color: white;
+        font-family: sans-serif;
+      }
+    
+      .LI-profile-badge {
+          width: 100%;
+          text-align: center;
+      }
+
+      .github {
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+      }
+    
+    }
+
+    .second_half_screen {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+        .back_to_home {
+            justify-content: center;
+            align-self: center;
+            width: 100%;
+            padding: 150px; 
+            display: flex;
+        }
+            .house {
+                background-color: rgb(127, 255, 212);
+                background: url("images/home.png") no-repeat;
+                background-size: 100px;
+                justify-content: center;
+                align-self: flex-end;
+                width: 100px;
+                height: 70px;
+            }
+    
+            .house p {
+                text-align: center;
+            }
+            .house a {
+                text-decoration: none;
+                font-family: "American Typewriter", serif;
+                color: rgb(255, 255, 255);
+            }
+/*
+	Max width before this PARTICULAR table gets nasty. This query will take effect for any screen smaller than 760px and also iPads specifically.
+	*/
+	@media
+	  only screen 
+    and (max-width: 760px) {
+
+		/* Force table to not be like tables anymore */
+		table, thead, tbody, th, td, tr {
+			display: block;
+		}
+
+		/* Hide table headers (but not display: none;, for accessibility) */
+		thead tr {
+			position: absolute;
+			top: -9999px;
+			left: -9999px;
+		}
+
+    tr {
+      margin: 0 0 1rem 0;
+    }
+      
+    tr:nth-child(odd) {
+      background: #ccc;
+    }
+    
+		td {
+			/* Behave  like a "row" */
+			border: none;
+			border-bottom: 1px solid #eee;
+			position: relative;
+			padding-left: 50%;
+		}
+
+		td:before {
+			/* Now like a table header */
+			position: absolute;
+			/* Top/left values mimic padding */
+			top: 0;
+            left: 6px;
+
+			width: 45%;
+			padding-right: 100px;
+			white-space: nowrap;
+        }
+
+		/*
+		Label the data
+    You could also use a data-* attribute and content for this. That way "bloats" the HTML, this way means you need to keep HTML and CSS in sync. Lea Verou has a clever way to handle with text-shadow.
+		*/
+	td:nth-of-type(1):before { content: ""; }
+	td:nth-of-type(2):before { content: ""; }
+	td:nth-of-type(3):before { content: ""; }
+	td:nth-of-type(4):before { content: ""; }
+}

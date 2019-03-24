@@ -1,18 +1,78 @@
 # **Portfolio - Web Technologies.**
 
-
-
-
 ## GitHub Repo
-  ### *[Rainbow](https://github.com/sickill/rainbow)*
+  ### *[repo](https://github.com/Juanmasoa/juanmasoa.github.io)*
+  ### *[portfolio website](https://juanmasoa.github.io)*
 
+## Description of the portolio website
+The aim of this project is create a portfolio with HTML and CSS web technologies in a way that it shows it´s designer´s personality (so thay potential employers know if he fits whit their company culture) and professional/academic background.
 
+### Features
+- Each page (separately):
+1. Home page from which user can access the other 4 pages. There are 4 bottoms, each of which sends the user to the correspondent page.
+![alt text][docs/desktophomepage(screenshot).png]
+![alt text][docs/mobilehomepage(screenshot).png]
+2. Juanma page: a brief story about the developer and it´s main personal characteristics. It contains two images in its html file and two background images.
+![alt text][docs/desktopjuanmapage(screenshot).png]
+![alt text][docs/mobilejuanmapage(screenshot).png]
+3. CV/Background page: Very schematic summary of creator´s CV. There are 4 sections: Academic (excellence scholarships, dual degree and coding), Professional (paid positions), Volunteer and Own Projects (ones started by the developer: a start-up and a poetry group). It also has an animation which tries to transmit the effort in the pursuit of knowledge and expertise.
+![alt text][docs/desktopbackgroundpage(screenshot).png]
+![alt text][docs/mobilebackgroundpage(screenshot).png]
+4. Art page: art deserves a special mention in the developer´s life. It contains some links to the previous and current blogs, two fixed background images, and one html image.
+![alt text][docs/desktopartpage(screenshot).png]
+![alt text][docs/mobileartpage(screenshot).png]
+5. Contact page: a first "my details" section with LinkedIn´s badge and GitHub logo, the latter being an html image, linked to the online repository.
+![alt text][images/desktopcontactpage(screenshot).png]
+![alt text][images/mobilecontactpage(screenshot).png]
+
+- Common features:
+1. (Except for the Home page) A home button to go back to Home page.
+2. Footers:
+⋅⋅1. License footer: to indicate the webpage is under a NonCommercial Creative Commons license.
+⋅⋅2. Contacy footer: with developer´s email, and GitHub and LinkedIn profiles.
+
+### Sitemap
+![alt text][docs/sitemap.png]
+
+### Target audience
+Potential employers and future Coding students. 
+
+### Tech stack
+HTML and CSS. The LinkedIn badge is code in Js. 
+
+## Description of the design, development process
+### Design process
+I followed a kind-of **agile methodology** being myself both the client and the development. I chose that because this is the first complete site I developed, and I wanted to wireframe the page while I was coding it. This allowed me to change quickly if something wasn´t working because I didn´t spend one whole day or so just in wireframing tasks, so I could start coding earlier.
+
+Furthermore, I started coding the HOME page for mobile soon in order to be trained and aware of how much time each type of function would take me to implement.
+
+### Wireframes
+![alt text][docs/wireframe1.png]
+![alt text][docs/wireframe2.png]
+![alt text][docs/wireframe3.png]
+![alt text][docs/wireframe4.png]
+![alt text][docs/wireframe5.png]
+![alt text][docs/wireframe6.png]
+![alt text][docs/wireframe7.png]
+![alt text][docs/wireframe8.png]
+![alt text][docs/wireframe9.png]
+
+As you can see, pencil was used to divide each page on divs so it was easy to implement it in the coding tools. Youc an also find the needed features indicated in blue in some of the wireframes.
+
+###Usability considerations
+In order to make it responsive, I used media queries. For the mobile part, I tried to used button-like links (a tags) in order to make the page user-friendly and intuitive.
+
+### Planning process
+Firstly, I design a draft of my schedule to state the big parts of the process (wireframing, function coding, style, documentation, submission).
+![alt text][docs/timetable.png]
+To set my steps, I used platform Trello, which is really convenient and user-friendly.
+![alt text][docs/trello.png]
 
 ## The History of Internet
 ### Key events in the development of the internet from the 1980s to today
 -	In 1983 Defense of USA uses the TCP / IP protocol in its Arpanet network.
 -	1989: Tim Berners Lee describes the protocol of hypertext transfers that would lead to the first web using three new resources: HTML, HTTP and Web Browser. 
--	1990: the Internet is born in a closed form within CERN. 
+-	1990: the Internet is born in a closed form within CERN.
 -	1991: external users to CERN begin to access this information.
 -	1993: Mosaic web browser is created. It is the first to show images in line with text, as other graphical user interface norms (eg.: browser’s URL address bar and back/forward/reload options for viewing webpages.)
 -	1995: the NSFNET is decommissioned.
