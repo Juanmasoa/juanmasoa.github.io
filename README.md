@@ -34,6 +34,41 @@ The aim of this project is create a portfolio with HTML and CSS web technologies
 ### Sitemap
 ![alt text](docs/sitemap.png)
 
+xml sitemap:
+
+    <url>
+    <loc>https://juanmasoa.github.io/</loc>
+    <lastmod>2019-03-24T09:10:02+00:00</lastmod>
+    <priority>1.00</priority>
+    </url>
+    <url>
+    <loc>https://juanmasoa.github.io/src/juanma.html</loc>
+    <lastmod>2019-03-24T09:10:02+00:00</lastmod>
+    <priority>0.80</priority>
+    </url>
+    <url>
+    <loc>https://juanmasoa.github.io/src/background.html</loc>
+    <lastmod>2019-03-24T09:10:02+00:00</lastmod>
+    <priority>0.80</priority>
+    </url>
+    <url>
+    <loc>https://juanmasoa.github.io/src/art.html</loc>
+    <lastmod>2019-03-24T09:10:02+00:00</lastmod>
+    <priority>0.80</priority>
+    </url>
+    <url>
+    <loc>https://juanmasoa.github.io/src/contact.html</loc>
+    <lastmod>2019-03-24T09:10:02+00:00</lastmod>
+    <priority>0.80</priority>
+    </url>
+    <url>
+    <loc>https://juanmasoa.github.io/index.html</loc>
+    <lastmod>2019-03-24T09:10:02+00:00</lastmod>
+    <priority>0.64</priority>
+    </url>
+
+
+    </urlset>
 ### Target audience
 Potential employers and future Coding students. 
 
