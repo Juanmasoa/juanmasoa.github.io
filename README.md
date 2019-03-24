@@ -47,15 +47,15 @@ I followed a kind-of **agile methodology** being myself both the client and the 
 Furthermore, I started coding the HOME page for mobile soon in order to be trained and aware of how much time each type of function would take me to implement.
 
 ### Wireframes
-![alt text](docs/wireframe1.png)
-![alt text](docs/wireframe2.png)
-![alt text](docs/wireframe3.png)
-![alt text](docs/wireframe4.png)
-![alt text](docs/wireframe5.png)
-![alt text](docs/wireframe6.png)
-![alt text](docs/wireframe7.png)
-![alt text](docs/wireframe8.png)
-![alt text](docs/wireframe9.png)
+![alt text](docs/wireframe1.jpg)
+![alt text](docs/wireframe2.jpg)
+![alt text](docs/wireframe3.jpg)
+![alt text](docs/wireframe4.jpg)
+![alt text](docs/wireframe5.jpg)
+![alt text](docs/wireframe6.jpg)
+![alt text](docs/wireframe7.jpg)
+![alt text](docs/wireframe8.jpg)
+![alt text](docs/wireframe9.jpg)
 
 As you can see, pencil was used to divide each page on divs so it was easy to implement it in the coding tools. Youc an also find the needed features indicated in blue in some of the wireframes.
 
